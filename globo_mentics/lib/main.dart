@@ -19,7 +19,33 @@ class GlobeApp extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          child: Center(child: Text('Commit to be fit')),
+          child: Center(
+            child: Container(
+              padding: EdgeInsets.all(24),
+              width: 400,
+              height: 130,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(20)),
+                color: Colors.white70,
+              ),
+              child: Center(
+                child: Text(
+                  'Commit to be fit, dare to be great \nwith GloboFitness',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    shadows: [
+                      Shadow(
+                        blurRadius: 2.0,
+                        color: Colors.grey,
+                        offset: Offset(1.0, 1.0),
+                      ),
+                    ],
+                    fontSize: 22,
+                  ),
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );
