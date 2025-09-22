@@ -28,6 +28,15 @@ class MenuDrawer extends StatelessWidget {
       ),
     );
 
+    menuTitles.forEach((String element) {
+      menuListItem.add(
+        ListTile(
+          title: Text(element, style: TextStyle(fontSize: 18)),
+          onTap: () {},
+        ),
+      );
+    });
+
     return menuListItem;
   }
 }
