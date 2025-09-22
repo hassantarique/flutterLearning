@@ -118,3 +118,8 @@ app.*.symbols
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
 /.vs/flutterLearning/FileContentIndex
+/.vs/flutterLearning/v17/.wsuo
+/.vs/flutterLearning/v17/DocumentLayout.backup.json
+/.vs/slnx.sqlite-journal
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
