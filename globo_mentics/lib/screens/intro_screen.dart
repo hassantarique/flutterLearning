@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../shared/menu_drawer.dart';
+import '../shared/menu_bottom.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
@@ -9,25 +10,7 @@ class IntroScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Nasir The Body Builder')),
       drawer: MenuDrawer(),
-      bottomNavigationBar: BottomNavigationBar(
-        onTap: (int index) {
-          switch (index) {
-            case 0:
-              Navigator.pushNamed(context, '/');
-              break;
-            case 1:
-              Navigator.pushNamed(context, '/bmi');
-              break;
-          }
-        },
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.monitor_weight),
-            label: 'BMI',
-          ),
-        ],
-      ),
+      bottomNavigationBar: MenuBottom(),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
