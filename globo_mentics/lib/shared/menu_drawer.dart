@@ -44,6 +44,7 @@ class MenuDrawer extends StatelessWidget {
                 screen = BmiScreen();
                 break;
             }
+            Navigator.of(context).pop();
             Navigator.of(
               context,
             ).push(MaterialPageRoute(builder: (cotext) => screen));
